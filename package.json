@@ -1,0 +1,10 @@
+{
+  "name": "acos-html",
+  "version": "0.1.0",
+  "description": "ACOS HTML Protocol",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "MIT"
+}
