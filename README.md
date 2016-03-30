@@ -1,5 +1,4 @@
-HTML protocol
-=============
+# HTML protocol
 
 This protocol adds the support to load activities
 from the server into `iframe`. This protocol does
