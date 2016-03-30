@@ -6,5 +6,10 @@
   "scripts": {
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/acos-server/acos-html.git"
+  }
+
 }
