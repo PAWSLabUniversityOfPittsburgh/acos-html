@@ -1,15 +1,13 @@
 {
   "name": "acos-html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ACOS HTML Protocol",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "MIT",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/acos-server/acos-html.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acos-server/acos-html.git"
   }
-
 }
