@@ -22,8 +22,9 @@ ACOSHTML.initialize = function(req, params, handlers, cb) {
 
 };
 
-ACOSHTML.handleEvent = function(event, payload, req, res, protocolData) {
-  res.json({ 'status': 'OK' });
+ACOSHTML.handleEvent = function(event, payload, req, res, protocolData, responseObj, cb) {
+  res.json({ 'status': 'OK', 'protocol': responseObj.protocol, 'content': responseObj.content });
+  cb(event, payload, req, res, protocolData, responseObj);
 };
 
 ACOSHTML.register = function(handlers) {
@@ -39,7 +40,7 @@ ACOSHTML.meta = {
   'description': '',
   'author': 'Aalto University',
   'license': 'MIT',
-  'version': '0.0.1',
+  'version': '0.2.0',
   'url': ''
 };
 

@@ -3,7 +3,7 @@
 
   var ACOS = function() {};
 
-  ACOS.sendEvent = function(event, payload) {
+  ACOS.sendEvent = function(event, payload, cb) {
 
     var protocolData = {};
 
@@ -26,7 +26,11 @@
     if (event === 'log' && window.AcosLogging && AcosLogging.noLogging) {
       return;
     } else {
-      $.post(target + "/event", data);
+      $.post(target + "/event", data).done(function(response) {
+        if (cb) {
+          cb(response.content);
+        }
+      });
     }
 
   };
