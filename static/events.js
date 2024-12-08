@@ -26,6 +26,9 @@
     if (event === 'log' && window.AcosLogging && AcosLogging.noLogging) {
       return;
     } else {
+
+      SPLICE_PROTOCOL.sendMessage(event, payload, cb)
+
       $.post(target + "/event", data).done(function(response) {
         if (cb) {
           cb(response.content);

@@ -2,7 +2,9 @@ var ACOSHTML = function() {};
 
 ACOSHTML.addToHead = function(params) {
   return '<script src="/static/html/jquery.min.js" type="text/javascript"></script>\n' +
-    '<script src="/static/html/events.js" type="text/javascript"></script>\n';
+  '<script src="/static/html/uuid.min.js" type="text/javascript"></script>\n' + 
+  '<script src="/static/html/splice_protocol.js" type="text/javascript"></script>\n' + 
+  '<script src="/static/html/events.js" type="text/javascript"></script>\n';
 };
 
 ACOSHTML.addToBody = function(params) {
@@ -36,11 +38,11 @@ ACOSHTML.packageType = 'protocol';
 
 ACOSHTML.meta = {
   'name': 'html',
-  'shortDescription': 'Simple protocol for loading content without any communication with the server.',
+  'shortDescription': 'Protocol for loading content with SPLICE Content Protocol support.',
   'description': '',
-  'author': 'Aalto University',
+  'author': 'PAWS Lab and Aalto University',
   'license': 'MIT',
-  'version': '0.2.0',
+  'version': '1.0.0',
   'url': ''
 };
 
